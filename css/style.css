@@ -8,12 +8,66 @@
     width: 70%;
     margin: 0 auto;
     margin-top: 15px;
+    background-color: lightgrey;
+    /* display: none; */
+    max-height: 900px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
 }
 
 a {
     text-decoration: none;
 }
 
-.menu li {
+.menu ul li {
     list-style: none;
+    padding: 15px 0;
+    border-bottom: 2px solid black;
+    flex: auto;
+}
+
+.menu ul li a {
+    color: black;
+}
+
+.menu ul li:hover {
+    background-color: #444;
+    color: white;
+    display: block;
+
+}
+
+/* .menu ul li a:hover {
+    color: white
+} */
+
+.menu ul li:last-of-type {
+    border-bottom: none;;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#toggle-menu {
+    display: none;
+
+}
+
+.label-toggle {
+    background-color: #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#toggle-menu:checked ~ .menu {
+    /* display: block; */
+    height: 250px;
+}
+
+.label-toggle:hover {
+    cursor: pointer;
 }
