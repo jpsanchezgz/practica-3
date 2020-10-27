@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu li {
+    list-style: none;
+}
